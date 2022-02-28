@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .flex-item{
             display: flex;
-      
+           /* flex-direction: column-reverse; */
+            
             flex-wrap: wrap;
         }
         .box{
@@ -21,6 +25,25 @@
             justify-content: center;
             align-items: center;
         }
+        .box-1{
+            height: 300px;
+            border: 1px solid gray;
+            width: 250px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        .grow-practice{
+            display: flex;
+        }
+        .blogs{
+            margin: 15px;
+        }
+        #box-2{
+            flex-grow: 1;
+        }
+        #box-3{
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -30,6 +53,39 @@
     <div class="box">flex2</div>
     <div class="box">flex3</div>
     <div class="box">flex4</div>
+    </div>
+    <div class="grow-practice">
+        <div class="box-1" id="box-3">
+            <h2>Boxes</h2>
+        </div>
+        <div class="box-1" id="box-2">
+            <article>
+                <div class="blogs">
+                    <h2 class="blog">
+                        blog -1
+                    </h2>
+                    <p class="letter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio blanditiis vitae illo quibusdam obcaecati adipisci deleniti soluta porro, molestiae odit libero autem aspernatur assumenda fugiat itaque quaerat quidem consectetur necessitatibus eligendi beatae doloremque harum corporis. Cupiditate dolorem facere similique.</p>
+                </div>
+                <div class="blogs">
+                    <h2 class="blog">
+                        blog -1
+                    </h2>
+                    <p class="letter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio blanditiis vitae illo quibusdam obcaecati adipisci deleniti soluta porro, molestiae odit libero autem aspernatur assumenda fugiat itaque quaerat quidem consectetur necessitatibus eligendi beatae doloremque harum corporis. Cupiditate dolorem facere similique.</p>
+                </div>
+                <div class="blogs">
+                    <h2 class="blog">
+                        blog -1
+                    </h2>
+                    <p class="letter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio blanditiis vitae illo quibusdam obcaecati adipisci deleniti soluta porro, molestiae odit libero autem aspernatur assumenda fugiat itaque quaerat quidem consectetur necessitatibus eligendi beatae doloremque harum corporis. Cupiditate dolorem facere similique.</p>
+                </div>
+                <div class="blogs">
+                    <h2 class="blog">
+                        blog -1
+                    </h2>
+                    <p class="letter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio blanditiis vitae illo quibusdam obcaecati adipisci deleniti soluta porro, molestiae odit libero autem aspernatur assumenda fugiat itaque quaerat quidem consectetur necessitatibus eligendi beatae doloremque harum corporis. Cupiditate dolorem facere similique.</p>
+                </div>
+            </article>
+        </div>
     </div>
 </body>
 </html>
